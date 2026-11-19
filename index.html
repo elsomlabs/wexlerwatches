@@ -295,6 +295,8 @@ a{color:#17171A;text-decoration:none}a:hover{color:#7A5C28}
 @media (min-width:1280px){#about .sec-in{min-height:1228px}}
 @media (min-width:1500px){#about .about-img{width:min(1190px,calc(79.5vw - 662px)) !important}}
 @media (min-width:1280px) and (max-width:1499px){#about .split-text{left:0}#about .about-img{margin-right:calc(-1 * var(--pad)) !important;width:calc(100vw - 700px) !important}}
+/* hero logo: scale with the scene on desktop so it matches the 27-inch proportions at every width */
+@media (min-width:861px){.hero .hero-logo{width:clamp(150px,14.25vw,365px);top:max(52px,2.27vw);left:calc((100% - 100vw)/2 + max(32px,3.75vw))}}
 </style>
 </head><body>
 
