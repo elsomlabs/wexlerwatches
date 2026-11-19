@@ -59,7 +59,7 @@ a{color:#17171A;text-decoration:none}a:hover{color:#7A5C28}
 .hero-desc{grid-area:desc}
 .hero-scroll{grid-area:scroll;display:flex;flex-direction:column;align-items:center;gap:10px;min-height:44px;justify-content:flex-end}
 .hero-scroll i{display:block;width:1px;height:30px;background:linear-gradient(var(--gold),rgba(165,128,68,0))}
-.hero-logo{grid-area:logo;justify-self:end;width:clamp(250px,29vw,405px);height:auto;display:block}
+.hero-logo{grid-area:logo;justify-self:end;width:clamp(225px,26vw,365px);height:auto;display:block}
 
 /* ---------- placeholders ---------- */
 .ph{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;padding:22px;
@@ -182,7 +182,7 @@ a{color:#17171A;text-decoration:none}a:hover{color:#7A5C28}
   .hero-bottom{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"desc logo" "scroll logo";gap:10px 16px;margin-top:16px}
   .hero-scroll{flex-direction:row;align-items:center;justify-content:flex-start;min-height:0}
   .hero-scroll i{width:26px;height:1px;background:linear-gradient(90deg,var(--gold),rgba(165,128,68,0))}
-  .hero-logo{width:170px}
+  .hero-logo{width:153px}
   .hero-desc .dot{display:none}
   .hero-desc span.w{display:block}
   .sec-in{min-height:0;padding:84px var(--pad) 64px}
@@ -209,7 +209,7 @@ a{color:#17171A;text-decoration:none}a:hover{color:#7A5C28}
 @media (min-width:561px){.hero-desc{margin-bottom:56px}.hero-bottom{grid-template-columns:minmax(0,1fr) auto auto;grid-template-areas:"desc scroll logo"}}
 /* hero logo: top right corner, under the "Sold through eBay" label */
 .hero .hero-logo{position:absolute;top:58px;right:calc((100% - 100vw)/2 + 190px);z-index:1;grid-area:auto}
-@media (max-width:560px){.hero .hero-logo{top:36px;width:108px;right:calc((100% - 100vw)/2 + 16px)}.hero h1{max-width:calc(100% - 96px);font-size:20px !important;margin-top:4px !important}}
+@media (max-width:560px){.hero .hero-logo{top:36px;width:98px;right:calc((100% - 100vw)/2 + 16px)}.hero h1{max-width:calc(100% - 96px);font-size:20px !important;margin-top:4px !important}}
 .hero h1{font-size:clamp(26px,3.1vw,44px) !important;line-height:1.08 !important;letter-spacing:-.01em}
 /* swapped: headline top right, logo top left */
 .hero h1{position:absolute;top:44px;right:calc((100% - 100vw)/2 + 100px);margin:0 !important;text-align:right !important;max-width:none !important;grid-row:auto;z-index:1}
@@ -291,6 +291,10 @@ a{color:#17171A;text-decoration:none}a:hover{color:#7A5C28}
 @media (min-width:1700px){#contact .con-img{display:flex;align-items:center;justify-content:center;position:absolute;top:0;bottom:0;left:calc(100% + 41px);width:calc(50vw - 590px - 82px);pointer-events:none}#contact .con-img img{display:block;width:100%;height:auto;max-height:100%;object-fit:contain}}
 /* footer credit */
 .foot a.built{text-transform:none;display:inline;min-height:0;text-decoration:none}
+/* about: keep image clear of the text on mid-size desktops */
+@media (min-width:1280px){#about .sec-in{min-height:1228px}}
+@media (min-width:1500px){#about .about-img{width:min(1190px,calc(79.5vw - 662px)) !important}}
+@media (min-width:1280px) and (max-width:1499px){#about .split-text{left:0}#about .about-img{margin-right:calc(-1 * var(--pad)) !important;width:calc(100vw - 700px) !important}}
 </style>
 </head><body>
 
