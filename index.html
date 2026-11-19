@@ -23,7 +23,7 @@ a{color:#17171A;text-decoration:none}a:hover{color:#7A5C28}
 .sec::before,.hdr::after{content:"";position:absolute;left:50%;width:100vw;margin-left:-50vw;height:1px;background:var(--line);pointer-events:none}
 .sec::before{top:0}
 .hdr::after{bottom:0}
-.mk{position:absolute;top:-6px;width:12px;height:12px;z-index:1;pointer-events:none;background:radial-gradient(circle,#A58044 .8px,transparent 1.15px) 0 0/4px 4px,var(--bg)}
+.mk{position:absolute;top:-6px;width:12px;height:12px;z-index:1;pointer-events:none;background:var(--bg)}
 .mk-l{left:-6.5px}.mk-r{right:-6.5px}
 .mk-b{top:auto;bottom:-6px}
 .plus{position:absolute;width:13px;height:13px;pointer-events:none;background:linear-gradient(var(--line2),var(--line2)) 50% 50%/100% 1px no-repeat,linear-gradient(var(--line2),var(--line2)) 50% 50%/1px 100% no-repeat}
@@ -297,6 +297,8 @@ a{color:#17171A;text-decoration:none}a:hover{color:#7A5C28}
 @media (min-width:1280px) and (max-width:1499px){#about .split-text{left:0}#about .about-img{margin-right:calc(-1 * var(--pad)) !important;width:calc(100vw - 700px) !important}}
 /* hero logo: scale with the scene on desktop so it matches the 27-inch proportions at every width */
 @media (min-width:861px){.hero .hero-logo{width:clamp(150px,14.25vw,365px);top:max(52px,2.27vw);left:calc((100% - 100vw)/2 + max(32px,3.75vw))}}
+/* header: no vertical grid lines (full-width solid backdrop covers the column borders) */
+.hdr::before{content:"";position:absolute;z-index:-1;top:0;bottom:0;left:50%;width:100vw;margin-left:-50vw;background:#F8F8F7;pointer-events:none}
 </style>
 </head><body>
 
